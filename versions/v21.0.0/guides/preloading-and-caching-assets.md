@@ -49,7 +49,7 @@ class AppContainer extends React.Component {
   }
 
   render() {
-    if (!this.state.appIsReady) {
+    if (!this.state.isReady) {
       return (
         <AppLoading
           startAsync={this._loadAssetsAsync}
